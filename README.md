@@ -1,25 +1,20 @@
-# kakoune-mirror
+# kak-mirror
 
-[kakoune](http://kakoune.org) plugin to grow / shrink selections in both directions or surround them.
+A [kakoune](http://kakoune.org) plugin to grow / shrink selections in both directions or surround them.
 
-## Install
+A fork of [kakoune-mirror by Delapouite](https://github.com/Delapouite/kakoune-mirror) with several
+compatibility fixes.
 
-Add `mirror.kak` to your autoload dir: `~/.config/kak/autoload/`.
+## Installation
 
-Or via [plug.kak](https://github.com/andreyorst/plug.kak):
-
-```
-plug 'delapouite/kakoune-mirror' %{
-  # Suggested mapping
-  map global normal "'" ': enter-user-mode -lock mirror<ret>'
-}
-```
+Source `mirror.kak` in your `kakrc`, or use a plugin manager.
 
 ## Usage
 
-This plugin provides a `mirror` user-mode.
-
-For example with the above mapping, press `'` to enter the mirror mode (`<esc>` to leave).
+This plugin provides a `mirror` user-mode. Recommended usage is to bind this user mode to `'` in normal mode:
+```
+map global normal "'" ': enter-user-mode -lock mirror<ret>'
+```
 
 ### Grow / shrink
 
@@ -73,6 +68,7 @@ Oops, you meant to surround the double quotes with spaced-braces! Press `d` to r
 - [auto-pairs.kak](https://github.com/alexherbo2/auto-pairs.kak)
 - [surround.kak](https://github.com/alexherbo2/surround.kak)
 
-## Licence
+## Contributing
 
-MIT
+Please send questions, requests, bug reports, and patches to the
+[mailing list](https://lists.sr.ht/~raiguard/public-inbox).
