@@ -1,3 +1,5 @@
+# This project has migrated to [Codeberg](https://codeberg.org/raiguard/kak-mirror).
+
 # kak-mirror
 
 A [kakoune](http://kakoune.org) plugin to grow / shrink selections in both directions or surround them.

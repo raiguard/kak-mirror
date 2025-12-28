@@ -39,3 +39,8 @@ map global mirror '<a-S>' '<a-S>'       -docstring 'select sels boundaries'
 # Suggested mapping
 
 #map global normal "'" ': enter-user-mode -lock mirror<ret>' -docstring 'mirror lock'
+
+hook -once global NormalIdle .* %{
+  echo -debug "WARNING: kak-mirror has moved to https://codeberg.org/raiguard/kak-mirror. Please update your plugin configuration."
+  echo -markup "{Error}WARNING:{default} kak-mirror has moved to https://codeberg.org/raiguard/kak-mirror. Please update your plugin configuration."
+}
